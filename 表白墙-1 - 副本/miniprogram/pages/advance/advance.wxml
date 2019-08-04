@@ -1,0 +1,18 @@
+<!--miniprogram/pages/advance/advance.wxml-->
+<view class="content">
+  <form bindsubmit="formSubmit">
+    <view class="text-content">
+      <view class='input-content'>
+        <input placeholder="投诉建议~" />
+      </view>
+      <view class='text-area'>
+        <textarea name="input-content" type="text" placeholder="发现涉黄涉暴力可通过此反馈，我们将积极处理~" value="{{textContent}}" bindblur='getTextAreaContent'></textarea>
+      </view>
+    </view>
+
+    <view class='btn-func'>
+      <button class="btn" formType='submit' open-type="getUserInfo">投诉反馈</button>
+    </view>
+  </form>
+
+</view>
